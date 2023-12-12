@@ -32,18 +32,22 @@ Body:
 
 **Admin: Get by Employee ID**
 Get: localhost:8080/admin/getEmp/all
-Header: "":""
+Header: "Authorization":"token"
 
 **Admin: Get All Employee**
 Get: localhost:8080/admin/getEmp/{EmpID}
+Header: "Authorization":"token"
 example 
 localhost:8080/admin/getEmp/NL101
 
 **Admin: Delete by Employee ID**
 Get: localhost:8080/admin/delEmp/{EmpID}
+Header: "Authorization":"token"
+
 
 **Admin: Delete All Employee**
 Get:localhost:8080/admin/delEmp/all
+Header: "Authorization":"token"
 
 
 **Admin: Update By Employee ID**
@@ -53,3 +57,4 @@ Body:
     "employeeName" : "Harry John",
     "role" : "SDE1"
 }
+Header: "Authorization":"token"
