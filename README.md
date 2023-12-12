@@ -22,9 +22,9 @@ Post: localhost:8080/emp/signUp
 Body:
 {
     "employeeId": "NL100",
-    "employeeName":"Aditya Sakre",
-    "role": "SDE",
-    "email": "aditya@email.com",
+    "employeeName":"Person Name",
+    "role": "SDET",
+    "email": "name@email.com",
     "password": "aspas"
 }
 
