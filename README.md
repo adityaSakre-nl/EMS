@@ -1,15 +1,15 @@
-**Admin: SignUp**
+**Admin: SignUp** \
 Post:localhost:8080/admin/signUp \
 Body: 
 {
     "name": "admin",
     "email": "admin1@email.com",
     "password": "pass"
-}\
+} \
 
 
-**Admin:Login**
-Post: localhost:8080/admin/login\
+**Admin:Login**  \
+Post: localhost:8080/admin/login \
 Body:
 {
     "email":"admin1@email.com",
@@ -17,8 +17,8 @@ Body:
 }
 
 
-**Employee: SignUp**
-Post: localhost:8080/emp/signUp\
+**Employee: SignUp** \
+Post: localhost:8080/emp/signUp \
 Body:
 {
     "employeeId": "NL100",
@@ -30,27 +30,27 @@ Body:
 
 
 
-**Admin: Get by Employee ID**
+**Admin: Get by Employee ID** \
 Get: localhost:8080/admin/getEmp/all \
-Header: "Authorization":"token"\
+Header: "Authorization":"token" \
 
-**Admin: Get All Employee**
+**Admin: Get All Employee** \
 Get: localhost:8080/admin/getEmp/{EmpID} \
-Header: "Authorization":"token"\
+Header: "Authorization":"token" \
 example 
 localhost:8080/admin/getEmp/NL101
 
-**Admin: Delete by Employee ID**
+**Admin: Delete by Employee ID** \
 Get: localhost:8080/admin/delEmp/{EmpID} \
 Header: "Authorization":"token" \
 
 
-**Admin: Delete All Employee**
+**Admin: Delete All Employee** \
 Get:localhost:8080/admin/delEmp/all \
 Header: "Authorization":"token" \
 
 
-**Admin: Update By Employee ID**
+**Admin: Update By Employee ID** \
 Post: localhost:8080/admin/updateEmp/{EmpId} \
 Body: 
 {
